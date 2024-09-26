@@ -3,6 +3,8 @@ import { deepmerge } from '@mui/utils';
 
 import { Themes } from './types';
 
+const primary = '#F50057';
+
 const sharedTheme = {
   palette: {
     background: {
@@ -44,7 +46,7 @@ const themes: Record<Themes, ThemeOptions> = {
         paper: '#fff',
       },
       primary: {
-        main: '#3f51b5',
+        main: primary,
       },
     },
   }),
@@ -57,7 +59,7 @@ const themes: Record<Themes, ThemeOptions> = {
         paper: '#171717',
       },
       primary: {
-        main: '#333',
+        main: primary,
       },
     },
   }),

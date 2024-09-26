@@ -30,4 +30,12 @@ function useTheme(): [Themes, Actions] {
   return [themeMode, memoizedActions];
 }
 
+export function useIsDark(): [boolean] {
+  const [themeMode] = useRecoilState(themeModeState);
+
+  const isDark = themeMode === 'dark';
+
+  return [isDark];
+}
+
 export default useTheme;
